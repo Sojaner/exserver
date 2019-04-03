@@ -13,10 +13,12 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (_: express.Request, response: express.Response) => {
+
   response.send('Hello World!');
 });
 
 app.post('/save', async (request: express.Request, response: express.Response) => {
+
   await wait(3000);
 
   console.log(request.query);
@@ -27,5 +29,6 @@ app.post('/save', async (request: express.Request, response: express.Response) =
 });
 
 app.listen(5555, function () {
+
   console.log('Example app listening on port 5555!');
 });
