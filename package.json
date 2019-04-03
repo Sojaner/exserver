@@ -1,0 +1,22 @@
+{
+  "name": "exserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "debug": "ts-node-dev --inspect --respawn --transpileOnly ./app/app.ts",
+    "start": "tsc && node ./build/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.16.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "typescript": "^3.4.1"
+  }
+}
